@@ -2,7 +2,7 @@
 using UnityEditor;
 using System;
 
-namespace FrancoSorbello.UGMod.Editor
+namespace francosorbello.ugmodframework.Editor
 {    
     /// <summary>
     /// Crea un material a partir de una textura.
