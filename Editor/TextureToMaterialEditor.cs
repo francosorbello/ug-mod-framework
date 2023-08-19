@@ -23,7 +23,7 @@ namespace francosorbello.ugmodframework.Editor
             newMaterial.mainTexture = (Texture2D) selectedTexture;
             newMaterial.SetFloat("_Glossiness",0.0f);
         
-            string path = String.Format("{0}/{1}.mat",GetMaterialsFolder(selectedTexture),GetTextureName((Texture2D)selectedTexture));
+            string path = String.Format("{0}/mat_{1}.mat",GetMaterialsFolder(selectedTexture),GetTextureName((Texture2D)selectedTexture));
             AssetDatabase.CreateAsset(newMaterial,path);
         }
         
