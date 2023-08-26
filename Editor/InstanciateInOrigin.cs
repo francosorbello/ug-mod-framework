@@ -15,7 +15,6 @@ namespace francosorbello.ugmodframework.Editor
         public static void DoInstantiateInOrigin()
         {
             var selectedObject = Selection.activeObject;
-            Debug.Log(selectedObject.GetType());
             
             if(selectedObject.GetType() == typeof(GameObject))
             {
