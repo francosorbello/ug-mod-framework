@@ -8,7 +8,7 @@ namespace francosorbello.ugmodframework.Editor
     /// <summary>
     /// Creates a README.md file inside the folder the option was selected from.
     /// </summary>
-    public class CreateReadmeFile : MonoBehaviour
+    public class CreateReadmeFile
     {
         [MenuItem("Assets/Tools/Create Readme File")]
         public static void CreateReadme()
@@ -24,7 +24,7 @@ namespace francosorbello.ugmodframework.Editor
 
             string assetPathAndName = AssetDatabase.GenerateUniqueAssetPath(path + "/README.md");
 
-            // System.IO.File.WriteAllText(assetPathAndName, "Readme file created.");
+            System.IO.File.WriteAllText(assetPathAndName, "");
             AssetDatabase.Refresh();
         }
     }
