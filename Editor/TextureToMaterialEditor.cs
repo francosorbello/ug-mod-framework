@@ -9,7 +9,7 @@ namespace francosorbello.ugmodframework.Editor
     /// </summary>
     public class TextureToMaterialEditor
     {
-        [MenuItem("Assets/UG/Create Material from Texture")]
+        [MenuItem("Assets/Tools/Create Material from Texture")]
         public static void CreateMaterialFromTexture()
         {
             var selectedTexture = Selection.activeObject;
